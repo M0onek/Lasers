@@ -9,6 +9,10 @@ public class Level : MonoBehaviour
     public void LoadStartMenu()
     {
         SceneManager.LoadScene("Start Menu");
+        if (FindObjectOfType<GameSession>())
+        {
+            FindObjectOfType<GameSession>().ResetGame();
+        }
     }
 
     public void LoadAllLevels()
@@ -43,15 +47,21 @@ public class Level : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        Debug.Log("nameeeasdasdadasdasd");
-        Debug.Log("nameee" + SceneManager.GetActiveScene().name);
         if (SceneManager.GetActiveScene().name == "Win Game")
         {
             SceneManager.LoadScene("Game 1");
+            if (FindObjectOfType<GameSession>())
+            {
+                FindObjectOfType<GameSession>().ResetGame();
+            }
         }
         if (SceneManager.GetActiveScene().name == "Win Game 1")
         {
             SceneManager.LoadScene("Game 2");
+            if (FindObjectOfType<GameSession>())
+            {
+                FindObjectOfType<GameSession>().ResetGame();
+            }
         }
     }
 

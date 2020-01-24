@@ -97,13 +97,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 1
-  health: 300
+  health: 3000
   deathSound: {fileID: 8300000, guid: 728c051b81da8434ea15a7405dad6fdb, type: 3}
   deathSoundVolume: 0.75
   laserPrefab: {fileID: 7328686489424446437, guid: b96a097376f6a874b9b577d57b7f3012,
     type: 3}
   laserSpeed: 20
-  laserFiringPeriod: 0.4
+  laserFiringPeriod: 0.01
   shootSound: {fileID: 8300000, guid: a433d52703eb3f34b91b69d92a207daf, type: 3}
   shootSoundVolume: 0.25
 --- !u!60 &692115143

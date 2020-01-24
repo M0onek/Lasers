@@ -850,7 +850,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 917784578}
-        m_MethodName: LoadMainGame
+        m_MethodName: LoadAllLevels
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

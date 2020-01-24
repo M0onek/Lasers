@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyBoss : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class EnemyBoss : MonoBehaviour
     [SerializeField] [Range(0, 1)] float deathSoundVolume = 0.75f;
     [SerializeField] AudioClip shootSound;
     [SerializeField] [Range(0, 1)] float shootSoundVolume = 0.25f;
+
+    string sceneName = "";
 
     // Start is called before the first frame update
     void Start()
@@ -94,6 +97,7 @@ public class EnemyBoss : MonoBehaviour
         GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(explosion, durationOfExplosion);
         AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
-        FindObjectOfType<Level>().LoadWinGame();
+        sceneName = SceneManager.GetActiveScene().name;
+        FindObjectOfType<Level>().LoadWinGame(sceneName);
     }
 }

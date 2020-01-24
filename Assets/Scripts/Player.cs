@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
     Coroutine firingCoroutine;
 
     float xMin, xMax, yMin, yMax;
+    string sceneName = "";
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +58,8 @@ public class Player : MonoBehaviour
 
     private void Death()
     {
-        FindObjectOfType<Level>().LoadGameOver();
+        sceneName = SceneManager.GetActiveScene().name;
+        FindObjectOfType<Level>().LoadGameOver(sceneName);
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position, deathSoundVolume);
     }

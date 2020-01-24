@@ -8,7 +8,12 @@ public class Level : MonoBehaviour
     [SerializeField] float delayInSeconds = 2f;
     public void LoadStartMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Start Menu");
+    }
+
+    public void LoadAllLevels()
+    {
+        SceneManager.LoadScene("Levels");
     }
 
     public void LoadMainGame()
@@ -19,25 +24,77 @@ public class Level : MonoBehaviour
             FindObjectOfType<GameSession>().ResetGame();
         }
     }
-
-    public void LoadWinGame()
+    public void LoadMainGame1()
     {
-        StartCoroutine(WaitAndLoadWin());
+        SceneManager.LoadScene("Game 1");
+        if (FindObjectOfType<GameSession>())
+        {
+            FindObjectOfType<GameSession>().ResetGame();
+        }
+    }
+    public void LoadMainGame2()
+    {
+        SceneManager.LoadScene("Game 2");
+        if (FindObjectOfType<GameSession>())
+        {
+            FindObjectOfType<GameSession>().ResetGame();
+        }
     }
 
-    public void LoadGameOver()
+    public void LoadNextLevel()
     {
-        StartCoroutine(WaitAndLoadLose());
+        Debug.Log("nameeeasdasdadasdasd");
+        Debug.Log("nameee" + SceneManager.GetActiveScene().name);
+        if (SceneManager.GetActiveScene().name == "Win Game")
+        {
+            SceneManager.LoadScene("Game 1");
+        }
+        if (SceneManager.GetActiveScene().name == "Win Game 1")
+        {
+            SceneManager.LoadScene("Game 2");
+        }
     }
-    IEnumerator WaitAndLoadWin()
+
+    public void LoadWinGame(string sceneName)
+    {
+        StartCoroutine(WaitAndLoadWin(sceneName));
+    }
+
+    public void LoadGameOver(string sceneName)
+    {
+        StartCoroutine(WaitAndLoadLose(sceneName));
+    }
+    IEnumerator WaitAndLoadWin(string sceneName)
     {
         yield return new WaitForSeconds(delayInSeconds);
-        SceneManager.LoadScene("Win Game");
+        if (sceneName == "Game")
+        {
+            SceneManager.LoadScene("Win Game");
+        }
+        if (sceneName == "Game 1")
+        {
+            SceneManager.LoadScene("Win Game 1");
+        }
+        if (sceneName == "Game 2")
+        {
+            SceneManager.LoadScene("Win Game 2");
+        }
     }
-    IEnumerator WaitAndLoadLose()
+    IEnumerator WaitAndLoadLose(string sceneName)
     {
         yield return new WaitForSeconds(delayInSeconds);
-        SceneManager.LoadScene("Game Over");
+        if (sceneName == "Game")
+        {
+            SceneManager.LoadScene("Game Over");
+        }
+        if (sceneName == "Game 1")
+        {
+            SceneManager.LoadScene("Game Over 1");
+        }
+        if (sceneName == "Game 2")
+        {
+            SceneManager.LoadScene("Game Over 2");
+        }
     }
 
     public void QuitGame()

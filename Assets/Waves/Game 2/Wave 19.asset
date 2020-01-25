@@ -19,5 +19,5 @@ MonoBehaviour:
   timeToNextWave: 2
   timeBetweenSpawns: 0.5
   spawnRandomFactor: 2
-  numberOfEnemies: 5
+  numberOfEnemies: 25
   moveSpeed: 3

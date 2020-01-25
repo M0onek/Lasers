@@ -162,15 +162,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10000
   scoreVaule: 4500
-  minTimeBetweenShots: 5
-  maxTimeBetweenShots: 5
+  minTimeBetweenShots: 6
+  maxTimeBetweenShots: 6
   projectile: {fileID: 6490029684326587301, guid: 052b131d3451f0f4094c052a996ac2fb,
     type: 3}
   projectileSpeed: 2
-  numberOfProjectiles: 40
+  numberOfProjectiles: 50
   numberOfProjectileWaves: 5
-  shootAngle: 5
-  timeBetweenShootingWaves: 0.75
+  shootAngle: 10
+  timeBetweenShootingWaves: 0.5
   deathVFX: {fileID: 1473455728123631697, guid: 169b4a9a884276740a5880d49849f6b2,
     type: 3}
   durationOfExplosion: 3

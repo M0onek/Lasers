@@ -430,19 +430,19 @@ PrefabInstance:
     - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
         type: 3}
       propertyPath: waveConfigs.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
         type: 3}
       propertyPath: waveConfigs.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 49142baaa1247ff4ebaaa277d17fc2f9,
+      objectReference: {fileID: 11400000, guid: 4bbd2d9ce261c744b8f05d0ab78c5d25,
         type: 2}
     - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
         type: 3}
       propertyPath: waveConfigs.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: b67f2b45c7e7ccc4ba0be37c4ce31764,
+      objectReference: {fileID: 11400000, guid: b3c4cec804f673b4e8cd811cb4a1d466,
         type: 2}
     - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
         type: 3}
@@ -453,13 +453,43 @@ PrefabInstance:
         type: 3}
       propertyPath: waveConfigs.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 600670ade575e45408b3ebc1fc007090,
+      objectReference: {fileID: 11400000, guid: 07046ca7c4f9ceb4c8f85dc370da6b18,
         type: 2}
     - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
         type: 3}
       propertyPath: waveConfigs.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: 6781a5e5f537b2740b1072778f6d8667,
+      objectReference: {fileID: 11400000, guid: fa6fe01d1abab4db891f2df3cbe534d1,
+        type: 2}
+    - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 66b6a5a2c30da034ca20466671180e21,
+        type: 2}
+    - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 448e34e3c83db4d43b08e443414da2c2,
+        type: 2}
+    - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: a10a2533413a988418217b2459746f87,
+        type: 2}
+    - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: b56a638dc90440a46a61aef7a5f03b73,
+        type: 2}
+    - target: {fileID: 118652342022436196, guid: 166e091bc930832449265d31cee8a687,
+        type: 3}
+      propertyPath: waveConfigs.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8e22ffd45fdfb9c4b9db9f02379be647,
         type: 2}
     - target: {fileID: 118652342022436197, guid: 166e091bc930832449265d31cee8a687,
         type: 3}
@@ -1021,7 +1051,7 @@ PrefabInstance:
     - target: {fileID: 5297321635314962365, guid: e7354036bdc002442930a2767a6b6c6f,
         type: 3}
       propertyPath: m_Volume
-      value: 0.069
+      value: 0.768
       objectReference: {fileID: 0}
     - target: {fileID: 6597146090152014293, guid: e7354036bdc002442930a2767a6b6c6f,
         type: 3}
@@ -1278,6 +1308,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661416205345548467, guid: e2517232cea440a4b8d1167915df6573,
+        type: 3}
+      propertyPath: laserFiringPeriod
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661416205345548467, guid: e2517232cea440a4b8d1167915df6573,
+        type: 3}
+      propertyPath: laserSpeed
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661416205345548467, guid: e2517232cea440a4b8d1167915df6573,
+        type: 3}
+      propertyPath: health
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 8661416205345548468, guid: e2517232cea440a4b8d1167915df6573,
         type: 3}

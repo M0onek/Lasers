@@ -1040,7 +1040,7 @@ PrefabInstance:
     - target: {fileID: 5297321635314962365, guid: e7354036bdc002442930a2767a6b6c6f,
         type: 3}
       propertyPath: m_Volume
-      value: 0.069
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 6597146090152014293, guid: e7354036bdc002442930a2767a6b6c6f,
         type: 3}
@@ -1297,6 +1297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8661416205345548467, guid: e2517232cea440a4b8d1167915df6573,
+        type: 3}
+      propertyPath: shootSoundVolume
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 8661416205345548468, guid: e2517232cea440a4b8d1167915df6573,
         type: 3}
